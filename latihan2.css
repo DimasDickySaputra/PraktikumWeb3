@@ -1,0 +1,37 @@
+  body {
+    background-color: #9999cc
+  }
+  #textbox1 {
+  margin-left: 3px;
+  }
+  h3 {
+    text-align: center;
+  }
+  #textbox2 {
+   margin-left: 3px;
+  }
+  #textbox3 {
+   margin-left: 3px;
+  }
+
+  .tombol{
+   background-color: green;
+   font-family:fantasy;
+   font-size: 20px;
+   margin-left: 5px;
+
+  }
+/*css untuk class border*/ 
+  .border{
+   background-color: white;
+   margin: 10px;
+   margin-left: 700px;
+   margin-top: 150px;
+   padding: 0px;
+   border-color: black;
+   border-style: solid;
+   font-family: fantasy;
+   color: black;
+   font-size: 20px;
+   width: 400px;
+  }

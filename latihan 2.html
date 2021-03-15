@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalkulator Sederhana</title>
+</head>
+<link rel="stylesheet" type="text/css" href="latihan2.css">
+<body>
+ <form name="kalkulator">
+  
+  <div class="border">
+  	<div class="isi">
+  	<h3>Kalkulator Sederhana</h3>
+   <!--menginput text box untuk menginput nilai-->
+    <p>Bilangan 1:<input id="textbox1" placeholder="Masukkan Bilangan 1" type="text" name="bilangan1"></p>
+    <p>Bilangan 2:<input id="textbox2" placeholder="Masukkan Bilangan 2" type="text" name="bilangan2"></p>
+
+   <!--menginput text box untuk menampilkan hasil-->
+    <p>Hasil:<input id="textbox3" type="text" name="hasil"></p>
+
+	<!--menginput button-->
+    <input class="tombol" type="button" onclick="tambah()" value=" + ">
+    <input class="tombol" type="button" onclick="kurang()" value=" - ">
+    <input class="tombol" type="button" onclick="kali()" value=" * ">
+    <input class="tombol" type="button" onclick="bagi()" value=" / ">
+    <input class="tombol" type="reset" name="Reset">
+  </div>
+ </div>
+ </form>
+
+</body>
+</html>
+<script language="JavaScript">
+	// memanggil function untuk melakukan penjumlahan 
+	function tambah()
+	{
+	// deklararasi dan input nilai variabel
+	 var bilangan1=parseFloat(document.kalkulator.bilangan1.value);
+	 var bilangan2=parseFloat(document.kalkulator.bilangan2.value);
+
+	// deklarai operasi penjumlahan 
+	 var hasil= bilangan1+bilangan2;
+	 document.kalkulator.hasil.value=hasil;//output:hasil penjumlahan
+	}
+	// memanggil function untuk melakukan pengurangan
+	function kurang()
+	{
+	// deklararasi dan input nilai variabel
+	 var bilangan1=parseFloat(document.kalkulator.bilangan1.value);
+	 var bilangan2=parseFloat(document.kalkulator.bilangan2.value);
+
+	 // deklarai operasi pengurangan
+	 var hasil= bilangan1-bilangan2;
+	 document.kalkulator.hasil.value=hasil;//output:hasil pengurangan
+	}
+	// memanggil function untuk melakukan perkalian
+	function kali()
+	{
+	// deklararasi dan input nilai variabel
+	 var bilangan1=parseFloat(document.kalkulator.bilangan1.value);
+	 var bilangan2=parseFloat(document.kalkulator.bilangan2.value);
+
+	 // deklarai operasi perkalian
+	 var hasil= bilangan1*bilangan2;
+	 document.kalkulator.hasil.value=hasil;//output:hasil perkalian
+	}
+	// memanggil function untuk melakukan pembagian
+	function bagi()
+	{
+	// deklararasi dan input nilai variabel
+	 var bilangan1=parseFloat(document.kalkulator.bilangan1.value);
+	 var bilangan2=parseFloat(document.kalkulator.bilangan2.value);
+
+	 // deklarai operasi pembagian
+	 var hasil= bilangan1/bilangan2;
+	 document.kalkulator.hasil.value=hasil;//output:hasil pembagian
+	}
+</script>
